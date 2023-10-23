@@ -7,10 +7,12 @@ class Pracownik(Osoba):
         self.stanowisko = stanowisko
         self.lata_pracy = lata_pracy
         self.wynagrodzenie = wynagrodzenie
-        
+        self.kolor_oczu = "niebieski"
+
     def __repr__(self):
         return f'dane pracownika -> {self.firma}, stanowisko: {self.stanowisko}, wynagordzenie: {self.wynagrodzenie} zł'
 
     def czypracownik(self):
         return True
-        
+
+
