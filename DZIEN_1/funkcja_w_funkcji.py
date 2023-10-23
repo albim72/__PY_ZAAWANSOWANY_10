@@ -72,3 +72,9 @@ def fx(n):
 fx(9)
 
 liczby = [45,12,78,90,24,-34,0,23,245,100,4,6,7,3,11,-3,-110]
+
+parzyste = list(filter(lambda x:x%2==0,liczby))
+print(parzyste)
+
+cube = list(map(lambda x:x**3,liczby))
+print(cube)
