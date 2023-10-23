@@ -43,4 +43,32 @@ print(rejestracja(1)(456))
 print(rejestracja(22)())
 print(rejestracja(0)())
 
+#przykład 3
 
+def startstop(funkcja):
+    def wrapper(*args):
+        print("startowanie procesu...")
+        funkcja(*args)
+        print("zakończenie procesu...")
+    return wrapper
+
+def zawijanie(w_co):
+    print(f'zawijanie czekoladek w {w_co}')
+
+zw = startstop(zawijanie)
+print(zw)
+zw("sreberka")
+
+@startstop
+def dmuchanie(czego):
+    print(f'dmuchanie {czego} na torcie urodzinowym!')
+
+dmuchanie("świeczek")
+
+@startstop
+def fx(n):
+    print(f'wynik = {n*2-1}')
+
+fx(9)
+
+liczby = [45,12,78,90,24,-34,0,23,245,100,4,6,7,3,11,-3,-110]
