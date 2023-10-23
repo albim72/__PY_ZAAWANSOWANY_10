@@ -25,6 +25,22 @@ class Osoba:
     def setoczy(self,nowy):
         self.kolor_oczu = nowy
 
-
+    
+    def bmi(self):
+        return self.waga/(self.wzost/100)**2
+    
+    def opis_bmi(self):
+        if self.bmi()<18.5:
+            return "niedowaga"
+        elif self.bmi() <=25:
+            return "waga prawidłowa"
+        elif self.bmi() <=30:
+            return "nadwaga"
+        elif self.bmi() <=35:
+            return "otyłość I"
+        elif self.bmi() <=40:
+            return "otyłość II"
+        else:
+            return "otyłość III"
 
 
