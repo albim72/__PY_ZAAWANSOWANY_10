@@ -1,5 +1,6 @@
 from osoba import Osoba
 from pracownik import Pracownik
+from student import Student
 
 
 print("_"*45)
@@ -22,9 +23,37 @@ print(f'kolor oczu: {em1.getoczy()}')
 
 print("_"*45)
 
+s1 = Student("Olaf",22,77,177,523423,"informatyka i matematyka",
+             "informatyka",3)
+print(s1)
+n=10
+print(f'wiek osoby za {n} lat wynosi {s1.wiekza_n_lat(n)}')
+print(f'czy osoba jest pracownikiem? ({s1.czypracownik()})')
+# em1.kolor_oczu = "zielone"
+s1.setoczy("piwne")
+print(f'kolor oczu: {s1.getoczy()}')
 
 
+print("_"*45)
 
 
+s2 = Student("Olga",23,56,168,765756,"fizjoterapia",
+             "fizjoterapia sportowa",4,"Medica","praktykantka",1,3000)
+print(s2)
+n=10
+print(f'wiek osoby za {n} lat wynosi {s2.wiekza_n_lat(n)}')
+print(f'czy osoba jest pracownikiem? ({s2.czypracownik()})')
+print(f'kolor oczu: {s2.getoczy()}')
 
+print("_"*45)
+
+
+s3 = Student("Robert",22,80,178,8768768,"logistyka i transport",
+             "transport",3,dyscyplina="biegi ULTRA",lata_upr=6,best_wynik="70km - 9h 12min 2s")
+print(s3)
+n=10
+print(s3.infosport())
+print(f'wiek osoby za {n} lat wynosi {s3.wiekza_n_lat(n)}')
+print(f'czy osoba jest pracownikiem? ({s3.czypracownik()})')
+print(f'kolor oczu: {s3.getoczy()}')
 
