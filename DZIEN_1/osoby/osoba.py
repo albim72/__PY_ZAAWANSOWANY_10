@@ -12,12 +12,19 @@ class Osoba:
 
     def info(self):
         print("Utworzono nową instancję klasy Osoba....")
-        
+
     def wiekza_n_lat(self,n):
         return self.wiek + n
-    
+
     def czypracownik(self):
         return False
-    
-    
+
+    def getoczy(self):
+        return self.kolor_oczu
+
+    def setoczy(self,nowy):
+        self.kolor_oczu = nowy
+
+
+
 
