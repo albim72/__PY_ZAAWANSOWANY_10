@@ -57,3 +57,28 @@ def genret():
 
 for t in genret():
     print(t)
+
+#przypadek 4
+
+def gen():
+    x = 0
+    while True:
+        y = yield x
+        if y is None:
+            x = x+1
+        else:
+            x=y
+
+g = gen()
+print("_"*50)
+print(next(g))
+print(next(g))
+print(next(g))
+
+print(g.send(121))
+print(next(g))
+print(next(g))
+print(next(g))
+
+print(g.send(15490))
+print(next(g))
