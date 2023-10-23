@@ -9,6 +9,7 @@ print(os1)
 n = 12
 print(f'wiek osoby za {n} lat wynosi {os1.wiekza_n_lat(n)}')
 print(f'czy osoba jest pracownikiem? ({os1.czypracownik()})')
+print(f'bmi ciała wynosi: {os1.bmi():.2f} -> {os1.opis_bmi()}')
 
 print("_"*45)
 
@@ -20,6 +21,7 @@ print(f'czy osoba jest pracownikiem? ({em1.czypracownik()})')
 # em1.kolor_oczu = "zielone"
 em1.setoczy("zielony")
 print(f'kolor oczu: {em1.getoczy()}')
+print(f'bmi ciała wynosi: {em1.bmi():.2f} -> {em1.opis_bmi()}')
 
 print("_"*45)
 
@@ -56,4 +58,5 @@ print(s3.infosport())
 print(f'wiek osoby za {n} lat wynosi {s3.wiekza_n_lat(n)}')
 print(f'czy osoba jest pracownikiem? ({s3.czypracownik()})')
 print(f'kolor oczu: {s3.getoczy()}')
+print(f'bmi ciała wynosi: {s3.bmi():.2f} -> {s3.opis_bmi()}')
 
