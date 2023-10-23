@@ -7,5 +7,9 @@ class Osoba:
         self.kolor_oczu = "brązowy"
         self.info()
 
+    def __repr__(self):
+        return f"jestem reprezentacją tekstową obiektu klasy Osoba -> imie: {self.imie}"
+
     def info(self):
         print("Utworzono nową instancję klasy Osoba....")
+
