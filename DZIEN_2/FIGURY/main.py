@@ -1,6 +1,8 @@
 from trojkat import Trojkat
 from prostokat import Prostokat
 from trapez import Trapez
+from kolo import Kolo
+
 
 tr = Trojkat(5.6,6.8)
 print(f'pole figury {tr.__class__.__name__} wynosi: {tr.policz_pole():.2f} cm2')
@@ -19,4 +21,8 @@ print("_"*50)
 
 trp = Trapez(8.2,6.3,4.4)
 print(f'pole figury {trp.__class__.__name__} wynosi: {trp.policz_pole():.2f} cm2')
+print("_"*50)
+
+kl = Kolo(5.5)
+print(f'pole figury {kl.__class__.__name__} wynosi: {kl.policz_pole():.2f} cm2')
 print("_"*50)
