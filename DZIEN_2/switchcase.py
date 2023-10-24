@@ -4,6 +4,8 @@ class Switch(object):
         cls.value = value
         return True
 
+    # def __init__(self, aaa):
+    #     self.aaa = aaa
 
 def case(*args):
     return any((Switch.value==arg for arg in args))
