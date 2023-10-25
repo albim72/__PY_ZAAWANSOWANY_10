@@ -5,6 +5,8 @@ class MojaMeta(type):
         print(f"dzidziczone klasy: {superclasses}")
         print(f"zbiór atrybutów: {attrs}")
         return type.__new__(cls, clsname, superclasses, attrs)
+    def jedynka(cls):
+        return 1
 
 class S:
     pass
@@ -20,5 +22,8 @@ class B(Specjalna):
 
 class C(F,B):
     pass
+
+cf = C
+print(cf.jedynka())
 
 
