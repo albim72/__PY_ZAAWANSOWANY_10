@@ -9,11 +9,11 @@ class AkwizytorNaEtacie(Akwizytor):
     def __init__(self, imie, nazwisko, nr_ubezpieczenia, sprzedaz, prowizja, pensja):
         super().__init__(imie, nazwisko, nr_ubezpieczenia, sprzedaz, prowizja)
         self.pensja = pensja
-        
+
     @property
     def pensja(self):
         return self._pensja
-    
+
     @pensja.setter
     def pensja(self,kwota):
         if kwota <= Decimal('0.00'):
@@ -26,8 +26,11 @@ class AkwizytorNaEtacie(Akwizytor):
     def __repr__(self):
         return 'Etatowy: ' + super().__repr__() + f'\n ryczałt: {self.pensja:.2f} zł'
     
-    
+
+    # __str__ -  komunikat tekstowy, rezprezentujący obiekt (komunikat błędu), ma pierwszeństwo przed __repr__
+    # __repr__ - reprezentacja tekstowa obiektu
+
+
         
-    
-    
-    
+
+
