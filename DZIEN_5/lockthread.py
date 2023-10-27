@@ -1,8 +1,10 @@
 import threading
 
-def worker(lock,shared_variable):
+def worker(lock,shared_var):
+    global shared_variable
     lock.acquire()
     try:
+
         shared_variable += 1
         print(f"Wątek {threading.current_thread().name} zwiekszył zmienną współdzieloną do {shared_variable}")
     finally:
